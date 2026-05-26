@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BROOKLYN BREAD CO.へのお問い合わせ、予約、ニュースレター登録フォーム。">
+  <title>お問い合わせ | BROOKLYN BREAD CO.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-transition" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">BBC</span><span>BROOKLYN BREAD CO.</span></a>
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false"><span></span><span></span></button>
+    <nav class="site-nav" aria-label="グローバルナビゲーション">
+      <a href="index.html">Top</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a><a href="access.html">Access</a><a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="compact-hero">
+      <div class="reveal">
+        <p class="eyebrow">Contact</p>
+        <h1>ご予約も、ご相談もお気軽に。</h1>
+        <p>商品のお取り置き、ギフト、取材、イベント利用について承ります。</p>
+      </div>
+    </section>
+
+    <section class="section contact-layout">
+      <form class="contact-form reveal" action="#" method="post">
+        <h2>お問い合わせ</h2>
+        <label>お名前<input type="text" name="name" autocomplete="name" required></label>
+        <label>メールアドレス<input type="email" name="email" autocomplete="email" required></label>
+        <label>お問い合わせ内容<select name="topic" required><option value="">選択してください</option><option>商品について</option><option>予約について</option><option>取材・イベント</option><option>その他</option></select></label>
+        <label>メッセージ<textarea name="message" rows="6" required></textarea></label>
+        <button class="button primary" type="submit">送信する</button>
+      </form>
+
+      <aside class="reservation-panel reveal">
+        <h2>予約フォーム</h2>
+        <form action="#" method="post">
+          <label>受取日<input type="date" name="date"></label>
+          <label>受取時間<input type="time" name="time"></label>
+          <label>商品・数量<textarea name="order" rows="4"></textarea></label>
+          <button class="button secondary" type="submit">予約内容を送る</button>
+        </form>
+        <div class="newsletter">
+          <h3>Newsletter</h3>
+          <p>新商品や季節限定メニューを月1回お届けします。</p>
+          <form action="#" method="post" class="newsletter-form">
+            <input type="email" name="newsletter" aria-label="ニュースレター用メールアドレス" placeholder="mail@example.com">
+            <button type="submit">登録</button>
+          </form>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><a class="footer-brand" href="index.html">BROOKLYN BREAD CO.</a><p>Handcrafted bakery inspired by Brooklyn cafe culture.</p></div>
+    <nav aria-label="フッターナビゲーション"><a href="about.html">About</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a><a href="access.html">Access</a><a href="contact.html">Contact</a></nav>
+    <small>&copy; 2026 BROOKLYN BREAD CO.</small>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
